@@ -1,0 +1,634 @@
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+03. hero CSS
+04. pro-pic CS
+05. money flow CSS
+06. cta CSS
+07. simple as CSS
+08. map CSS
+09. join CSS
+10. call center CSS
+11. footer CSS
+
+*/
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. header css 
+.................................. */
+header {
+  width: 100%;
+  position: absolute;
+  margin-top: 60px;
+}
+
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.menu-toggle span {
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.menu-toggle span:before,
+.menu-toggle span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -9px;
+  width: 25px;
+  height: 4px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.menu-toggle span:before {
+  top: unset;
+  bottom: -9px;
+  width: 14px;
+}
+
+.page-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* ..................................
+ 03. hero CSS 
+.................................. */
+.hero {
+  height: 165px;
+  width: 100%;
+  background: linear-gradient(to bottom, #FBC8D4, #B5B3FD);
+  border-radius: 0 0 50px 50px;
+  -webkit-border-radius: 0 0 50px 50px;
+  -moz-border-radius: 0 0 50px 50px;
+  -ms-border-radius: 0 0 50px 50px;
+  -o-border-radius: 0 0 50px 50px;
+}
+
+/* ..................................
+ 04. pro-pic CSS 
+.................................. */
+.pro-pic {
+  margin-bottom: 20px;
+}
+
+.pro-pic-wrapper {
+  width: 275px;
+  height: 141px;
+  background: #fff;
+  border-radius: 19px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transform: translateY(-55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+  -webkit-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+}
+
+.pro-pic-wrap {
+  position: relative;
+  width: 124px;
+  height: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro-pic-wrap .blt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border-top: 3px solid #707070;
+  border-left: 3px solid #707070;
+  border-radius: 13px 0 0 0;
+  -webkit-border-radius: 13px 0 0 0;
+  -moz-border-radius: 13px 0 0 0;
+  -ms-border-radius: 13px 0 0 0;
+  -o-border-radius: 13px 0 0 0;
+}
+
+.pro-pic-wrap .blb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border-bottom: 3px solid #707070;
+  border-left: 3px solid #707070;
+  border-radius: 0 0 0 13px;
+  -webkit-border-radius: 0 0 0 13px;
+  -moz-border-radius: 0 0 0 13px;
+  -ms-border-radius: 0 0 0 13px;
+  -o-border-radius: 0 0 0 13px;
+}
+
+.pro-pic-wrap .brt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border-top: 3px solid #707070;
+  border-right: 3px solid #707070;
+  border-radius: 0 13px 0 0;
+  -webkit-border-radius: 0 13px 0 0;
+  -moz-border-radius: 0 13px 0 0;
+  -ms-border-radius: 0 13px 0 0;
+  -o-border-radius: 0 13px 0 0;
+}
+
+.pro-pic-wrap .brb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border-bottom: 3px solid #707070;
+  border-right: 3px solid #707070;
+  border-radius: 0 0 13px 0;
+  -webkit-border-radius: 0 0 13px 0;
+  -moz-border-radius: 0 0 13px 0;
+  -ms-border-radius: 0 0 13px 0;
+  -o-border-radius: 0 0 13px 0;
+}
+
+.pro-pic h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #373737;
+  transform: translateY(-42px);
+  -webkit-transform: translateY(-42px);
+  -moz-transform: translateY(-42px);
+  -ms-transform: translateY(-42px);
+  -o-transform: translateY(-42px);
+}
+
+/* ..................................
+ 05. money flow CSS 
+.................................. */
+.money-flow .container {
+  padding: 0 24px;
+}
+
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.single-flow {
+  background: #F8F8F8;
+  border-radius: 19px;
+  height: 100px;
+  padding: 0 38px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -o-border-radius: 19px;
+}
+
+.show-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.flow-round {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  background: linear-gradient(to bottom, #FBC8D4, #B5B3FD);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.flow-round:hover {
+  background: linear-gradient(to top, #FBC8D4, #B5B3FD);
+}
+
+.long-arrow {
+  display: inline-block;
+  width: 74px;
+  height: 7px;
+  background: #DDB8DC;
+  border-radius: 4px 0 0 4px;
+  position: relative;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+}
+
+.long-arrow:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 7px solid #DDB8DC;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.long-arrow img {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.single-flow-desc {
+  text-align: center;
+  font-size: 17px;
+  color: #373737;
+  transform: translateY(-22px);
+  -webkit-transform: translateY(-22px);
+  -moz-transform: translateY(-22px);
+  -ms-transform: translateY(-22px);
+  -o-transform: translateY(-22px);
+}
+
+.single-flow-wrapper:first-child .single-flow-desc {
+  transform: translateY(-13px);
+  -webkit-transform: translateY(-13px);
+  -moz-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+}
+
+.more-flow i {
+  color: rgba(55, 55, 55, 0.26);
+  font-size: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+/* ..................................
+ 06. cta CSS 
+.................................. */
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #373737;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.cta {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.cta .container {
+  padding: 0 25px;
+}
+
+.solid-btn {
+  width: 237px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to right, #FBC8D4, #B5B3FD);
+  border-radius: 28px;
+  box-shadow: 0 6px 10px rgba(241, 134, 221, 0.24);
+  position: relative;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+}
+
+.solid-btn:hover {
+  color: #fff;
+  background: linear-gradient(to left, #FBC8D4, #B5B3FD);
+}
+
+.solid-btn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 17px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.solid-btn#cta-btn img {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+}
+
+.cta p {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 21px;
+  margin-bottom: 30px;
+  color: #DDB8DC;
+  text-decoration: underline;
+}
+
+/* ..................................
+ 07. simple as CSS 
+.................................. */
+.simple {
+  margin-top: 42px;
+  margin-bottom: 43px;
+}
+
+.simple .container {
+  padding: 0 25px;
+}
+
+.simple ul li {
+  margin-bottom: 18px;
+  padding-left: 26px;
+  font-size: 13px;
+  color: #373737;
+  line-height: 17px;
+  position: relative;
+}
+
+.simple ul li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 14px;
+  background: #DDB8DC;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/* ..................................
+ 08. map CSS 
+.................................. */
+.map {
+  margin-bottom: 34px;
+}
+
+.map .section-title {
+  position: relative;
+}
+
+.map .section-title i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: rgba(55, 55, 55, 0.53);
+}
+
+.map-img iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/* ..................................
+ 09. join CSS 
+.................................. */
+.join .container {
+  padding: 0 25px;
+}
+
+.login-reg {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.border-btn {
+  width: 142px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #DDB8DC;
+  background: tra;
+  border-radius: 28px;
+  transition: 0s;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -ms-transition: 0s;
+  -o-transition: 0s;
+}
+
+.border-btn:hover {
+  background: linear-gradient(to right, #FBC8D4, #B5B3FD);
+  color: #fff;
+  border-color: transparent;
+}
+
+.solid-btn#varified-btn img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+
+}
+
+
+/* ..................................
+ 10. call center CSS
+.................................. */
+.call-center {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.call-center .container {
+  padding: 0 25px;
+}
+
+.call-center .section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 36px;
+}
+
+.call-center .number {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-around; */
+  border-bottom: 2px solid rgba(112, 112, 112, 0.43);
+}
+
+.call-center .number i {
+  font-size: 21px;
+  color: #DDB8DC;
+  margin-right: 26px;
+}
+
+.call-center .number h2 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #373737;
+}
+
+/* ..................................
+ 11. footer CSS
+.................................. */
+footer {
+  background: #F8F8F8;
+  border-radius: 20px 20px 0 0;
+  padding: 22px 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+.foot-menu li {
+  color: rgba(55, 55, 55, 0.76);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.foot-menu li:hover {
+  /* color: #FBC8D4; */
+  color: #B5B3FD;
+}
+
+/* custom animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+  }
+}
